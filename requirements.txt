@@ -4,3 +4,5 @@ psycopg2-binary
 python-dotenv
 google-generativeai
 langchain
+langchain_community
+langchain_core
