@@ -426,6 +426,8 @@ with st.form(key='question_form'):
     with col2:
         submit = st.form_submit_button("Submit")
 
+sql_query = None
+
 if submit:
     st.subheader("Processing your query...")
 
@@ -471,7 +473,7 @@ st.sidebar.markdown(f"**Total LLM Calls:** {total_llm_calls}")
 if sql_query and sql_query != "Invalid query":
     st.sidebar.markdown(f"**Query Generated:** {sql_query}")
 else:
-    st.sidebar.markdown("**Query Generated:** None or invalid")
+    st.sidebar.markdown("**Query Generated:** None")
 
 
 
